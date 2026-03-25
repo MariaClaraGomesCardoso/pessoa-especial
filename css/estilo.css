@@ -1,13 +1,62 @@
 body {
-  background-color: blue; 
+    background-color: #FFF5F5; /* Fundo levemente rosado */
+    font-family: 'Georgia', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
 }
 
 h1 {
-  color: white; 
-  text-align: center;
+    color: #4A3B31;
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+.galeria {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 30px; /* Bordas bem arredondadas como na imagem */
+    box-shadow: 0 0 20px rgba(255, 182, 193, 0.4); /* Brilho rosa suave */
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Aumenta um pouco ao passar o mouse */
+}
+
+.card img {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.heart-pulse {
+    display: block;
+    color: #FF8A8A;
+    font-size: 24px;
+    margin: 10px 0;
+    animation: pulse 1.5s infinite; /* Efeito de batimento */
 }
 
 p {
-  font-family: verdana;
-  font-size: 20px;
+    font-size: 16px;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* Animação do coração */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
 }
