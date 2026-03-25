@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vanderleia Dias Cardoso - Homenagem</title>
-    <!-- Fontes Românticas do Google -->
+    
+    <!-- Link das Fontes Corrigido -->
     <link href="https://fonts.googleapis.com" rel="stylesheet">
+    
     <style>
         :root {
             --rosa-suave: #fce4ec;
@@ -19,8 +21,10 @@
             margin: 0;
             padding: 0;
             font-family: 'Montserrat', sans-serif;
+            /* Se quiser uma imagem de fundo, troque o link abaixo pelo nome da imagem */
             background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), 
-                        url('https://images.pexels.com');
+                        url('fundo.jpg'); 
+            background-color: var(--rosa-suave);
             background-size: cover;
             background-attachment: fixed;
             color: var(--rosa-escuro);
@@ -43,8 +47,9 @@
 
         .subtitle {
             font-family: 'Dancing Script', cursive;
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             color: var(--dourado);
+            margin-top: 10px;
         }
 
         .galeria {
@@ -58,14 +63,13 @@
         }
 
         .card {
-            background: rgba(255, 255, 255, 0.85);
+            background: rgba(255, 255, 255, 0.9);
             border-radius: 20px;
             overflow: hidden;
             width: 320px;
             box-shadow: 0 15px 35px rgba(214, 51, 132, 0.15);
             transition: all 0.4s ease;
             border: 1px solid rgba(255, 255, 255, 0.3);
-            position: relative;
         }
 
         .card:hover {
@@ -75,8 +79,8 @@
 
         .card img {
             width: 100%;
-            height: 220px;
-            object-fit: cover;
+            height: auto; /* Aumentei um pouco para fotos verticais */
+            display: block;
         }
 
         .card-content {
@@ -87,15 +91,16 @@
             display: inline-block;
             color: var(--rosa-medio);
             font-size: 30px;
-            margin: 10px 0;
+            margin-bottom: 10px;
             animation: pulse 1.5s infinite;
         }
 
         .card p {
             font-family: 'Dancing Script', cursive;
-            font-size: 1.4rem;
+            font-size: 1.5rem;
             line-height: 1.4;
             margin: 0;
+            font-weight: bold;
         }
 
         @keyframes pulse {
@@ -105,18 +110,11 @@
         }
 
         footer {
-            padding: 40px;
+            padding: 60px 40px;
             background: rgba(255, 255, 255, 0.6);
             font-family: 'Dancing Script', cursive;
-            font-size: 1.2rem;
-        }
-
-        /* Corações flutuantes de fundo */
-        .bg-hearts {
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            pointer-events: none;
-            z-index: -1;
+            font-size: 1.6rem;
+            color: var(--rosa-escuro);
         }
     </style>
 </head>
@@ -124,13 +122,13 @@
 
     <header>
         <h1>Vanderleia Dias Cardoso</h1>
-        <div class="subtitle">Para a passoa MAIS ESPECIAL do mundo !</div>
+        <div class="subtitle">Para a pessoa MAIS ESPECIAL do mundo!</div>
     </header>
 
     <div class="galeria">
         <!-- Card 1 -->
         <div class="card">
-            <img src="https://images.pexels.com" alt="Amor">
+            <img src="imagens/fotomae1(1).jpg" alt="Amorosa">
             <div class="card-content">
                 <span class="heart-pulse">♥</span>
                 <p>Maravilhosa, amorosa, especial! Minha musa inspiradora, minha maior protetora.</p>
@@ -139,7 +137,7 @@
 
         <!-- Card 2 -->
         <div class="card">
-            <img src="https://images.pexels.com" alt="Carinho">
+            <img src="imagens/fotomae2(2).jpg" alt="Carinhosa">
             <div class="card-content">
                 <span class="heart-pulse">♥</span>
                 <p>Mãe: palavra pequena para um significado tão infinito de amor e força.</p>
@@ -148,7 +146,7 @@
 
         <!-- Card 3 -->
         <div class="card">
-            <img src="https://images.pexels.com" alt="Gratidão">
+            <img src="imagens/fotomae3(3).jpg" alt="Guerreira">
             <div class="card-content">
                 <span class="heart-pulse">♥</span>
                 <p>Minha guerreira, sinônimo de resiliência e minha melhor amiga para sempre!</p>
@@ -157,7 +155,8 @@
     </div>
 
     <footer>
-        Assinado : Sua querida filha Maria Clara Gomes Cardoso ❤️ 
+        Assinado : <br>
+        Sua querida filha Maria Clara Gomes Cardoso ❤️ 
     </footer>
 
 </body>
