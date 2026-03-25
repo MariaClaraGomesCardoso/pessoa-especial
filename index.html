@@ -2,45 +2,163 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Vanderleia Dias Cardoso</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanderleia Dias Cardoso - Homenagem</title>
+    <!-- Fontes Românticas do Google -->
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
+    <style>
+        :root {
+            --rosa-suave: #fce4ec;
+            --rosa-medio: #f06292;
+            --rosa-escuro: #ad1457;
+            --creme: #fffbf2;
+            --dourado: #c5a059;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), 
+                        url('https://images.pexels.com');
+            background-size: cover;
+            background-attachment: fixed;
+            color: var(--rosa-escuro);
+            text-align: center;
+        }
+
+        header {
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(5px);
+        }
+
+        h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 4rem;
+            margin: 0;
+            color: var(--rosa-escuro);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .subtitle {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.5rem;
+            color: var(--dourado);
+        }
+
+        .galeria {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 20px;
+            overflow: hidden;
+            width: 320px;
+            box-shadow: 0 15px 35px rgba(214, 51, 132, 0.15);
+            transition: all 0.4s ease;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 20px 40px rgba(214, 51, 132, 0.25);
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 25px;
+        }
+
+        .heart-pulse {
+            display: inline-block;
+            color: var(--rosa-medio);
+            font-size: 30px;
+            margin: 10px 0;
+            animation: pulse 1.5s infinite;
+        }
+
+        .card p {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.4rem;
+            line-height: 1.4;
+            margin: 0;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.3); text-shadow: 0 0 15px var(--rosa-medio); }
+            100% { transform: scale(1); }
+        }
+
+        footer {
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.6);
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.2rem;
+        }
+
+        /* Corações flutuantes de fundo */
+        .bg-hearts {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+    </style>
 </head>
 <body>
 
-    <h1>Vanderleia Dias Cardoso<h1>
+    <header>
+        <h1>Vanderleia Dias Cardoso</h1>
+        <div class="subtitle">Para a passoa MAIS ESPECIAL do mundo !</div>
+    </header>
 
     <div class="galeria">
         <!-- Card 1 -->
         <div class="card">
-            <img src="https://images.pexels.com" alt= Amor">
-            <span class="heart-pulse">♥</span>
-            <p>Maravilhosa, amorosa, especial ! Minha musa inspiradora, minha maior protetora, meu exemplo de mulher !!!</p>
+            <img src="https://images.pexels.com" alt="Amor">
+            <div class="card-content">
+                <span class="heart-pulse">♥</span>
+                <p>Maravilhosa, amorosa, especial! Minha musa inspiradora, minha maior protetora.</p>
+            </div>
         </div>
 
         <!-- Card 2 -->
         <div class="card">
             <img src="https://images.pexels.com" alt="Carinho">
-            <span class="heart-pulse">♥</span>
-            <p>Mãe: palavra pequena para um significado tão infinito, pois quer dizer amor, carinho, dedicação, força e muita sabedoria !!!</p>
+            <div class="card-content">
+                <span class="heart-pulse">♥</span>
+                <p>Mãe: palavra pequena para um significado tão infinito de amor e força.</p>
+            </div>
         </div>
 
         <!-- Card 3 -->
         <div class="card">
-            <img src="https://images.pexels.com" alt="Cuidado">
-            <span class="heart-pulse">♥</span>
-            <p>Meu símbolo de amor, gratidão, proteção e inspiração ! Minha guerreira, sinônimo de resiliência, minha melhor amiga !!! <!DOCTYPE html>
-            <html lang="en">
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Document</title>
-            </head>
-            <body>
-                
-            </body>
-            </html></p>
+            <img src="https://images.pexels.com" alt="Gratidão">
+            <div class="card-content">
+                <span class="heart-pulse">♥</span>
+                <p>Minha guerreira, sinônimo de resiliência e minha melhor amiga para sempre!</p>
+            </div>
         </div>
     </div>
+
+    <footer>
+        Assinado : Sua querida filha Maria Clara Gomes Cardoso ❤️ 
+    </footer>
 
 </body>
 </html>
